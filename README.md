@@ -62,31 +62,23 @@ while True:
     if permanent_stop:
         stop()
         continue
-
     left = sensor_left.value()
     right = sensor_right.value()
-
     print("Left:", left, "Right:", right)
-
-    # Μόνιμο stop αν και οι δύο δουν μαύρο
-    
+    # Μόνιμο stop αν και οι δύο δουν μαύρο 
     if left == 1 and right == 1:
         print("STOP: Και οι δύο αισθητήρες είδαν μαύρο. Τερματισμός.")
         stop()
         permanent_stop = True
-
     # Αν δει μαύρο μόνο δεξιά → στροφή αριστερά
     elif left == 0 and right == 1:
         hard_left()
-
     # Αν δει μαύρο μόνο αριστερά → στροφή δεξιά
     elif left == 1 and right == 0:
         hard_right()
-
     # Αν δουν και οι δύο άσπρο → ευθεία
     elif left == 0 and right == 0:
         forward()
-
     # Μικρή καθυστέρηση για σταθερότητα
     sleep(0.01)
     
