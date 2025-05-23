@@ -1,10 +1,15 @@
 # omada6EnsSyst5-30
+
 #line follower robot ομάδα 6, 5:30-7
+
 from machine import Pin, PWM
+
 from time import sleep
 
 # Sensor pins (1 = μαύρο, 0 = άσπρο)
+
 sensor_left = Pin(2, Pin.IN)
+
 sensor_right = Pin(26, Pin.IN)
 
 # Motor PWM control pins
@@ -21,6 +26,7 @@ IN4.freq(1000)
 
 # Speed settings
 SPEED = 40000       # πιο αργό για ακρίβεια
+
 TURN_SPEED = 0      # ένας τροχός σταματημένος για "κλειστή" στροφή
 
 # --- Κινήσεις ---
