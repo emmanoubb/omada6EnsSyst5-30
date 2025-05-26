@@ -1,4 +1,4 @@
-# omada6EnsSyst5-30LOLA
+# omada6EnsSyst5-30
 
 #line follower robot ομάδα 6, 5:30-7
 
@@ -25,7 +25,7 @@ IN3.freq(1000)
 IN4.freq(1000)
 
 # Speed settings
-SPEED = 40000       # πιο αργό για ακρίβεια
+SPEED = 25000       # πιο αργό για ακρίβεια
 
 TURN_SPEED = 0      # ένας τροχός σταματημένος για "κλειστή" στροφή
 
